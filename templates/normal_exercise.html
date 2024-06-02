@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Diet</title>
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='img_admin/favicon.png') }}" rel="icon">
+<link href="{{ url_for('static', filename='img_admin/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{{ url_for('static', filename='css_admin/style.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
+  <style>
+    .card-container {
+      background-color: rgba(0, 123, 255, 0.5); /* Primary shade color with transparency */
+      padding: 10px; /* Adjust padding as needed */
+      border-radius: 20px; /* Optional: Add rounded corners */
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5); /* Shadow effect with transparency */
+    }
+    
+    
+    body {
+      background: url('static/img/body-background.jpg') center center/cover no-repeat fixed;
+      background-color: rgba(255, 255, 255, 0.5); /* Background color with transparency */
+    }
+  
+    
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <h1><a href="/admin">FITMATE</a></h1>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/admin">Home</a></li>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/bmi_calculator">BMI Calculate</a></li>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/logout">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <div class="container mt-5">
+<br>
+<br> 
+   <div class="alert alert-danger" role="alert">
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-weight: bold;" class="text-center">Here are some Exercises.</h2>
+   </div>
+   <div class="row mt-4 ms-5">
+    <!-- First Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/rope_jumping.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Jump Rope</h5>
+              <p class="card-text">Excellent cardio exercise that also improves coordination and agility.</p>
+              <p class="card-text"><small class="text-body-secondary">10 minutes</small></p>
+              <a class="btn btn-primary" href="https://www.youtube.com/embed/wqN5bRkZPK0" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Second Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static\exercise\running.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Running or Jogging</h5>
+              <p class="card-text">Great for cardiovascular health and endurance.</p>
+              <p class="card-text"><small class="text-body-secondary">Time:  20 minutes</small></p>
+              <a class="btn btn-primary" href="https://www.youtube.com/embed/M9U9pk6yOIU" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Third Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/pushups.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Push-Ups</h5>
+              <p class="card-text">Excellent for strengthening the upper body and core.</p>
+              <p class="card-text"><small class="text-body-secondary">3 sets of 15 repetitions</small></p>
+              <a class="btn btn-primary" href="https://www.youtube.com/embed/yQEx9OC2C3E" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Fourth Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/Squats.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Squats</h5>
+              <p class="card-text">Effective for building leg muscles and improving lower body strength.</p>
+              <p class="card-text"><small class="text-body-secondary">3 sets of 20 repetitions</small></p>
+              <a class="btn btn-primary" href="https://youtu.be/gsNoPYwWXeM?si=l0XZLoyHybeg2xEP" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/plank.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Planks</h5>
+              <p class="card-text">Ideal for enhancing core stability and strength</p>
+              <p class="card-text"><small class="text-body-secondary">3 sets of 1 minute each</small></p>
+              <a class="btn btn-primary" href="https://www.youtube.com/embed/v25dawSzRTM" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/lunge.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Lunges</h5>
+              <p class="card-text">Good for working the legs and improving balance.</p>
+              <p class="card-text"><small class="text-body-secondary">3 sets of 15 repetitions per leg</small></p>
+              <a class="btn btn-primary" href="https://www.youtube.com/embed/LCWWq3Lx2Sk" target="_blank">Play Video</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <!-- Modal -->
+
+  </div>
+  <footer id="footer">
+    <div class="container d-md-flex py-4 mt-3">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- Bootstrap Bundle with Popper -->
+  <!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor_admin/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/php-email-form/validate.js') }}"></script>
+<script>
+    document.getElementById('exampleLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      $('#exerciseModal').modal('show');
+    });
+  </script>
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='js_admin/main.js') }}"></script>
+
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+</body>
+</html>

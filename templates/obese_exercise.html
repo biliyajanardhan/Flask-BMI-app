@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Diet</title>
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='img_admin/favicon.png') }}" rel="icon">
+<link href="{{ url_for('static', filename='img_admin/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{{ url_for('static', filename='css_admin/style.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet">
+  <style>
+    .card-container {
+      background-color: rgba(0, 123, 255, 0.5); /* Primary shade color with transparency */
+      padding: 10px; /* Adjust padding as needed */
+      border-radius: 20px; /* Optional: Add rounded corners */
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5); /* Shadow effect with transparency */
+    }
+    
+    
+    body {
+      background: url('static/img/body-background.jpg') center center/cover no-repeat fixed;
+      background-color: rgba(255, 255, 255, 0.5); /* Background color with transparency */
+    }
+  
+    
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <h1><a href="/admin">FITMATE</a></h1>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/admin">Home</a></li>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/bmi_calculator">BMI Calculate</a></li>
+          <li><a class="nav-link scrollto text-danger" style="font-weight: bolder; font-family: 'Times New Roman', Times, serif;" href="/logout">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <div class="container mt-5">
+<br>
+<br> 
+<div class="alert alert-danger" role="alert">
+    <h2 style="font-family: 'Times New Roman', Times, serif;font-weight: bold;" class="text-center">Here are some Exercises.</h2>
+   </div>
+   
+   <div class="row mt-4 ms-5">
+    <!-- First Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/walking.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Walking in Place (Cardio)</h5>
+              <p class="card-text">Simply walk in place, lifting your knees higher for added intensity. Use your arms to increase the workout.</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 5-10 minutes and gradually increase to 30 minutes.</p>
+              <a class="btn btn-primary" href="https://youtu.be/l3s_PaD6ngs?si=6xDEmXammcrQTcip" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Second Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/chair-squats.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Chair Squats (Lower Body):</h5>
+              <p class="card-text">Stand in front of a sturdy chair with feet shoulder-width apart. Slowly lower your body toward the chair as if you were going to sit down, then stand back up.</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 1 set of 10 repetitions and gradually increase to 3 sets of 15 repetitions.</p>
+              <a class="btn btn-primary" href="https://youtu.be/b4esFx8-jeY?si=32HwHA1TOYtGXeXq" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Third Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/wall-pushups.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Wall Push-Ups (Upper Body)</h5>
+              <p class="card-text">Stand facing a wall at arm's length. Place your hands on the wall at shoulder height. Bend your elbows and lean in toward the wall, then push back out to the starting position.</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 1 set of 5 repetitions and gradually increase to 3 sets of 10 repetitions.</p>
+              <a class="btn btn-primary" href="https://youtu.be/YB0egDzsu18?si=pHHjYAU-5qX29NmH" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Fourth Card -->
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/leglift.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Seated Leg Lifts (Core and Legs)</h5>
+              <p class="card-text">Sit on the edge of a sturdy chair with your feet flat on the floor. Lift one leg straight out in front of you, then lower it back down. Alternate legs.</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 1 set of 10 repetitions per leg and gradually increase to 3 sets of 15 repetitions per leg.</p>
+              <a class="btn btn-primary" href="https://youtu.be/zBYL7PFft50?si=VbMPu5psX2qAwnot" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/sideleglift.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Standing Side Leg Lifts (Legs and Hips)</h5>
+              <p class="card-text">Stand next to a sturdy surface for support if needed. Lift one leg out to the side, then lower it back down. Alternate legs.</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 1 set of 10 repetitions per leg and gradually increase to 3 sets of 15 repetitions per leg.</p>
+              <a class="btn btn-primary" href="https://youtu.be/6b1hu6iSqok?si=m3d4gaDqWQIQfKPI" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-3 ms-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/exercise/marching.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Marching in Place with Arm Raises (Cardio and Upper Body)</h5>
+              <p class="card-text">Stand with feet shoulder-width apart and arms by your sides. Lift your knees up as high as comfortable while raising your arms overhead. Lower arms and repeat</p>
+              <p class="card-text"><small class="text-body-secondary"></small>Time: Start with 5 minutes and gradually increase to 15-20 minutes.</p>
+              <a class="btn btn-primary" href="https://youtu.be/UWs5cMCTLj4?si=hvo3OZYWbLmiZ_ns" target="_blank">Play Video</a>
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <footer id="footer">
+    <div class="container d-md-flex py-4 mt-3">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- Bootstrap Bundle with Popper -->
+  <!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor_admin/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/php-email-form/validate.js') }}"></script>
+<script>
+    document.getElementById('exampleLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      $('#exerciseModal').modal('show');
+    });
+  </script>
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='js_admin/main.js') }}"></script>
+
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+</body>
+</html>

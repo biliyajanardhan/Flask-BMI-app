@@ -1,0 +1,298 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "connect_db",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "underweight_diet",
+        "importPath": "function",
+        "description": "function",
+        "isExtraImport": true,
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "obese_diet",
+        "importPath": "function",
+        "description": "function",
+        "isExtraImport": true,
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "overweight_diet",
+        "importPath": "function",
+        "description": "function",
+        "isExtraImport": true,
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "normal_diet",
+        "importPath": "function",
+        "description": "function",
+        "isExtraImport": true,
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/register', methods=['GET', 'POST'])\ndef register():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        username = request.form.get('username')\n        password = request.form.get('password')\n        conn = connect_db()\n        cur = conn.cursor()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def register():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        username = request.form.get('username')\n        password = request.form.get('password')\n        conn = connect_db()\n        cur = conn.cursor()\n        try:\n            # Insert data into PostgreSQL table\n            cur.execute(\"INSERT INTO login (name, username, password,usertype) VALUES (%s, %s, %s,%s)\", (name, username, password,'user'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    if request.method == 'POST':\n        # Get username and password from the form\n        username = request.form.get('username')\n        password = request.form.get('password')\n        # Connect to the database\n        conn = connect_db()\n        cur = conn.cursor()\n        # Check if the username and password match and fetch the user type\n        cur.execute(\"SELECT name, usertype FROM login WHERE username = %s AND password = %s\", (username, password))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def admin():\n    return render_template('admin.html')\n@app.route('/admin1')\ndef admin1():\n    return render_template('admin1.html')\n@app.route('/bmi_calculator', methods=['GET', 'POST'])\ndef bmi():\n    return render_template('bmi.html')\n@app.route('/bmi_normal', methods=['GET', 'POST'])\ndef bmi_normal():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin1",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def admin1():\n    return render_template('admin1.html')\n@app.route('/bmi_calculator', methods=['GET', 'POST'])\ndef bmi():\n    return render_template('bmi.html')\n@app.route('/bmi_normal', methods=['GET', 'POST'])\ndef bmi_normal():\n    vegetarian_diet, non_vegetarian_diet = normal_diet()\n    return render_template('normal.html', title=\"Normal Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "bmi",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def bmi():\n    return render_template('bmi.html')\n@app.route('/bmi_normal', methods=['GET', 'POST'])\ndef bmi_normal():\n    vegetarian_diet, non_vegetarian_diet = normal_diet()\n    return render_template('normal.html', title=\"Normal Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, \n                           non_vegetarian_diet=non_vegetarian_diet)\n@app.route('/underweight')\ndef underweight():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "bmi_normal",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def bmi_normal():\n    vegetarian_diet, non_vegetarian_diet = normal_diet()\n    return render_template('normal.html', title=\"Normal Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, \n                           non_vegetarian_diet=non_vegetarian_diet)\n@app.route('/underweight')\ndef underweight():\n    vegetarian_diet, non_vegetarian_diet = underweight_diet()\n    return render_template('underweight.html', title=\"Underweight Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "underweight",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def underweight():\n    vegetarian_diet, non_vegetarian_diet = underweight_diet()\n    return render_template('underweight.html', title=\"Underweight Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, \n                           non_vegetarian_diet=non_vegetarian_diet)\n@app.route('/overweight')\ndef overweight():\n    vegetarian_diet, non_vegetarian_diet = overweight_diet()\n    return render_template('overweight.html', title=\"Overweight Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "overweight",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def overweight():\n    vegetarian_diet, non_vegetarian_diet = overweight_diet()\n    return render_template('overweight.html', title=\"Overweight Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, \n                           non_vegetarian_diet=non_vegetarian_diet)\n@app.route('/obese')\ndef obese():\n    vegetarian_diet, non_vegetarian_diet = obese_diet()\n    return render_template('obese.html', title=\"Obesity Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "obese",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def obese():\n    vegetarian_diet, non_vegetarian_diet = obese_diet()\n    return render_template('obese.html', title=\"Obesity Diet Plan\", \n                           vegetarian_diet=vegetarian_diet, \n                           non_vegetarian_diet=non_vegetarian_diet)\n@app.route('/viewuser')\ndef manage_users():\n    # Admin functionality to manage users\n    # Connect to the database and fetch user data where usertype is 'user'\n    conn = connect_db()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "manage_users",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def manage_users():\n    # Admin functionality to manage users\n    # Connect to the database and fetch user data where usertype is 'user'\n    conn = connect_db()\n    cur = conn.cursor()\n    cur.execute(\"SELECT name, username, password FROM login WHERE usertype = 'user'\")\n    users = cur.fetchall()\n    cur.close()\n    conn.close()\n    return render_template('manage_users.html', users=users, enumerate=enumerate)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def logout():\n    return render_template('index.html') \nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/register', methods=['GET', 'POST'])\ndef register():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        username = request.form.get('username')\n        password = request.form.get('password')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "connect_db",
+        "kind": 2,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "def connect_db():\n    conn = psycopg2.connect(\n        dbname=DB_NAME,\n        user=DB_USER,\n        password=DB_PASSWORD,\n        host=DB_HOST\n    )\n    return conn\nconn = connect_db() \nif conn:",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "DB_NAME",
+        "kind": 5,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "DB_NAME = 'bmi'\nDB_USER = 'postgres'\nDB_PASSWORD = 'Mrpl123$'\nDB_HOST = 'localhost'\ndef connect_db():\n    conn = psycopg2.connect(\n        dbname=DB_NAME,\n        user=DB_USER,\n        password=DB_PASSWORD,\n        host=DB_HOST",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "DB_USER",
+        "kind": 5,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "DB_USER = 'postgres'\nDB_PASSWORD = 'Mrpl123$'\nDB_HOST = 'localhost'\ndef connect_db():\n    conn = psycopg2.connect(\n        dbname=DB_NAME,\n        user=DB_USER,\n        password=DB_PASSWORD,\n        host=DB_HOST\n    )",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PASSWORD",
+        "kind": 5,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "DB_PASSWORD = 'Mrpl123$'\nDB_HOST = 'localhost'\ndef connect_db():\n    conn = psycopg2.connect(\n        dbname=DB_NAME,\n        user=DB_USER,\n        password=DB_PASSWORD,\n        host=DB_HOST\n    )\n    return conn",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "DB_HOST",
+        "kind": 5,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "DB_HOST = 'localhost'\ndef connect_db():\n    conn = psycopg2.connect(\n        dbname=DB_NAME,\n        user=DB_USER,\n        password=DB_PASSWORD,\n        host=DB_HOST\n    )\n    return conn\nconn = connect_db() ",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "db",
+        "description": "db",
+        "peekOfCode": "conn = connect_db() \nif conn:\n    print('Connected to the database')\nelif not conn:\n    print('Not connected to the database')",
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "underweight_diet",
+        "kind": 2,
+        "importPath": "function",
+        "description": "function",
+        "peekOfCode": "def underweight_diet():\n    vegetarian_diet = {\n        \"Breakfast\": [\n            \"Oatmeal with Nuts and Fruits\",\n            \"Smoothie\",\n            \"Toast with Avocado and Eggs\"\n        ],\n        \"Lunch\": [\n            \"Vegetable Stir-Fry with Quinoa\",\n            \"Paneer Curry with Brown Rice\",",
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "normal_diet",
+        "kind": 2,
+        "importPath": "function",
+        "description": "function",
+        "peekOfCode": "def normal_diet():\n    vegetarian_diet = {\n        \"Breakfast\": [\n            \"Greek Yogurt with Fresh Fruit\",\n            \"Whole Grain Toast with Avocado\",\n            \"Smoothie with Spinach and Berries\"\n        ],\n        \"Lunch\": [\n            \"Quinoa Salad with Chickpeas and Vegetables\",\n            \"Vegetable Soup with Whole Grain Bread\",",
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "overweight_diet",
+        "kind": 2,
+        "importPath": "function",
+        "description": "function",
+        "peekOfCode": "def overweight_diet():\n    vegetarian_diet = {\n        \"Breakfast\": [\n            \"Green Smoothie with Spinach, Kale, and Banana\",\n            \"Whole Grain Cereal with Almond Milk\",\n            \"Avocado Toast with Tomatoes\"\n        ],\n        \"Lunch\": [\n            \"Mixed Bean Salad with Fresh Vegetables\",\n            \"Lentil Soup with Whole Grain Bread\",",
+        "detail": "function",
+        "documentation": {}
+    },
+    {
+        "label": "obese_diet",
+        "kind": 2,
+        "importPath": "function",
+        "description": "function",
+        "peekOfCode": "def obese_diet():\n    vegetarian_diet = {\n        \"Breakfast\": [\n            \"Chia Pudding with Almond Milk and Berries\",\n            \"Green Smoothie with Spinach, Cucumber, and Apple\",\n            \"Oatmeal with Blueberries and Almonds\"\n        ],\n        \"Lunch\": [\n            \"Mixed Vegetable Salad with Quinoa and Chickpeas\",\n            \"Lentil Soup with Spinach\",",
+        "detail": "function",
+        "documentation": {}
+    }
+]

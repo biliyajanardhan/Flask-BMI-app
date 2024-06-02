@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FITEMATE - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+<link href="{{ url_for('static', filename='img_admin/favicon.png') }}" rel="icon">
+<link href="{{ url_for('static', filename='img_admin/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{{ url_for('static', filename='css_admin/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">FITMATE</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="/admin">Home</a></li>
+          <li><a class="nav-link scrollto" href="/bmi_calculator"> BMI Calculate</a></li>
+          <li><a class="nav-link scrollto" href="/logout">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>{{name}} Welcome to <span>FITMATE</span></h1>
+      <h2> we believe that understanding your BMI (Body Mass Index) shouldn't be complicated</h2>
+      <a href="/bmi_calculator" class="btn-get-started scrollto">Get your BMI</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= What We Do Section ======= -->
+    <section id="what-we-do" class="what-we-do">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What is BMI</h2>
+          <p style="font-family: 'Times New Roman', Times, serif;font-size: larger;">BMI stands for <u class="text-primary">Body Mass Index</u>. It's a measure used to assess an individual's body weight in relation to their height. BMI is calculated by dividing a person's weight in kilograms by the square of their height in meters (BMI = weight (kg) / height (m)^2).
+
+            BMI is commonly used as a screening tool to categorize individuals into different weight categories, such as underweight, normal weight, overweight, and obese. While it's a useful tool for population-level assessments of weight status, BMI alone may not provide a complete picture of an individual's health because it does not directly measure body fat percentage or distribution. Therefore, it's often used in conjunction with other assessments, such as waist circumference and health risk assessments, to better evaluate overall health and risk factors for certain diseases.</p>
+        </div>
+      </div>
+    </section><!-- End What We Do Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="static\img_admin\men-eating.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>What your BMI result means</h3>
+            <p>
+              A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
+            </p>
+            <div class="row icon-boxes">
+              <div class="col-md-6">
+                <img src="assets/images/icon-eating.svg" alt="">
+                <h4>Healthy eating</h4>
+                <p>Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <img src="assets/images/icon-exercise.svg" alt="">
+                <h4>Regular exercise</h4>
+                <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <img src="assets/images/icon-sleep.svg" alt="">
+                <h4>Adequate sleep</h4>
+                <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+            <img src="static\img_admin\bmi_adult.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Limitations of BMI</h2>
+          <p>Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <img src="static\img_admin\icon-gender.svg" alt=""> 
+              <h4><a href="#">Gender</a></h4>
+              <p>The development and body fat composition of girls and boys vary with age.
+                Consequently, a child's age and gender are considered when evaluating their BMI.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src="static\img_admin\icon-age.svg" alt=""> 
+              <h4><a href="#">Age</a></h4>
+              <p>In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <img src="static\img_admin\icon-muscle.svg" alt=""> 
+              <h4><a href="#">Muscle</a></h4>
+              <p>BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <img src="static\img_admin\icon-pregnancy.svg" alt=""> 
+              <h4><a href="#">Pregnancy</a></h4>
+              <p>Expectant mothers experience weight gain due to their growing baby.
+                Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and             </div>
+          </div>
+          
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <img src="static\img_admin\icon-race.svg" alt=""> 
+              <h4><a href="#">Race</a></h4>
+              <p>Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others.
+                To learn more, it is advised to discuss this with your GP or practice nurse.</p>            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="{{ url_for('static', filename='vendor_admin/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor_admin/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='js_admin/main.js') }}"></script>
+
+</body>
+
+</html>

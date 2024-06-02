@@ -1,0 +1,121 @@
+Diet Type,Diet Category,Meal Type,Meal,Rating
+Underweight,Vegetarian,Breakfast,Oatmeal with Nuts and Fruits,4
+Underweight,Vegetarian,Breakfast,Smoothie,5
+Underweight,Vegetarian,Breakfast,Toast with Avocado and Eggs,4
+Underweight,Vegetarian,Mid-Morning Snack,Greek Yogurt with Honey and Granola,4
+Underweight,Vegetarian,Mid-Morning Snack,Fruit Salad,3
+Underweight,Vegetarian,Lunch,Vegetable Stir-Fry with Quinoa,4
+Underweight,Vegetarian,Lunch,Paneer Curry with Brown Rice,5
+Underweight,Vegetarian,Lunch,Lentil Soup and Whole Wheat Bread,4
+Underweight,Vegetarian,Afternoon Snack,Smoothie Bowl,5
+Underweight,Vegetarian,Afternoon Snack,Whole Wheat Crackers with Hummus,4
+Underweight,Vegetarian,Dinner,Stuffed Bell Peppers,4
+Underweight,Vegetarian,Dinner,Vegetable Korma with Naan,5
+Underweight,Vegetarian,Dinner,Palak Paneer with Paratha,5
+Underweight,Vegetarian,Evening Snack,Cheese and Fruit Platter,4
+Underweight,Vegetarian,Evening Snack,Milkshake,5
+Underweight,Non-Vegetarian,Breakfast,Egg and Avocado Toast,4
+Underweight,Non-Vegetarian,Breakfast,Chicken Sausage with Veggies,4
+Underweight,Non-Vegetarian,Breakfast,Smoothie,5
+Underweight,Non-Vegetarian,Mid-Morning Snack,Greek Yogurt with Honey and Granola,4
+Underweight,Non-Vegetarian,Mid-Morning Snack,Boiled Eggs and Nuts,3
+Underweight,Non-Vegetarian,Lunch,Grilled Chicken with Quinoa and Veggies,5
+Underweight,Non-Vegetarian,Lunch,Fish Curry with Brown Rice,5
+Underweight,Non-Vegetarian,Lunch,Chicken Stir-Fry with Brown Rice,4
+Underweight,Non-Vegetarian,Afternoon Snack,Protein Shake,5
+Underweight,Non-Vegetarian,Afternoon Snack,Tuna Salad on Whole Wheat Crackers,4
+Underweight,Non-Vegetarian,Dinner,Baked Salmon with Sweet Potatoes,5
+Underweight,Non-Vegetarian,Dinner,Chicken Curry with Naan,5
+Underweight,Non-Vegetarian,Dinner,Shrimp Stir-Fry with Vegetables,5
+Underweight,Non-Vegetarian,Evening Snack,Cheese and Fruit Platter,4
+Underweight,Non-Vegetarian,Evening Snack,Milkshake,5
+Normal,Vegetarian,Breakfast,Greek Yogurt with Fresh Fruit,4
+Normal,Vegetarian,Breakfast,Whole Grain Toast with Avocado,4
+Normal,Vegetarian,Breakfast,Smoothie with Spinach and Berries,5
+Normal,Vegetarian,Mid-Morning Snack,Hummus with Carrot and Cucumber Sticks,4
+Normal,Vegetarian,Mid-Morning Snack,A Handful of Mixed Nuts,4
+Normal,Vegetarian,Lunch,Quinoa Salad with Chickpeas and Vegetables,4
+Normal,Vegetarian,Lunch,Vegetable Soup with Whole Grain Bread,4
+Normal,Vegetarian,Lunch,Grilled Vegetable Sandwich,4
+Normal,Vegetarian,Afternoon Snack,Apple Slices with Almond Butter,4
+Normal,Vegetarian,Afternoon Snack,Trail Mix,3
+Normal,Vegetarian,Dinner,Vegetable Stir-Fry with Brown Rice,4
+Normal,Vegetarian,Dinner,Lentil Curry with Quinoa,4
+Normal,Vegetarian,Dinner,Stuffed Zucchini with Cheese,4
+Normal,Vegetarian,Evening Snack,Baked Sweet Potato Fries,3
+Normal,Vegetarian,Evening Snack,Dark Chocolate and Berries,4
+Normal,Non-Vegetarian,Breakfast,Scrambled Eggs with Spinach and Tomatoes,4
+Normal,Non-Vegetarian,Breakfast,Greek Yogurt with Honey and Granola,4
+Normal,Non-Vegetarian,Breakfast,Smoothie with Protein Powder and Berries,5
+Normal,Non-Vegetarian,Mid-Morning Snack,Turkey Slices with Cheese,4
+Normal,Non-Vegetarian,Mid-Morning Snack,Mixed Nuts and Seeds,4
+Normal,Non-Vegetarian,Lunch,Grilled Chicken Salad with Mixed Greens,5
+Normal,Non-Vegetarian,Lunch,Turkey and Avocado Sandwich on Whole Grain Bread,4
+Normal,Non-Vegetarian,Lunch,Salmon with Quinoa and Steamed Vegetables,5
+Normal,Non-Vegetarian,Afternoon Snack,Hard-Boiled Eggs,3
+Normal,Non-Vegetarian,Afternoon Snack,Veggies with Hummus,4
+Normal,Non-Vegetarian,Dinner,Grilled Fish with Sweet Potato and Asparagus,5
+Normal,Non-Vegetarian,Dinner,Chicken Stir-Fry with Mixed Vegetables and Brown Rice,4
+Normal,Non-Vegetarian,Dinner,Beef and Vegetable Stew,5
+Normal,Non-Vegetarian,Evening Snack,Cottage Cheese with Pineapple,4
+Normal,Non-Vegetarian,Evening Snack,Whole Grain Crackers with Tuna,4
+Overweight,Vegetarian,Breakfast,"Green Smoothie with Spinach, Kale, and Banana",5
+Overweight,Vegetarian,Breakfast,Whole Grain Cereal with Almond Milk,3
+Overweight,Vegetarian,Breakfast,Avocado Toast with Tomatoes,4
+Overweight,Vegetarian,Mid-Morning Snack,Carrot Sticks with Hummus,4
+Overweight,Vegetarian,Mid-Morning Snack,Apple Slices with Peanut Butter,4
+Overweight,Vegetarian,Lunch,Mixed Bean Salad with Fresh Vegetables,4
+Overweight,Vegetarian,Lunch,Lentil Soup with Whole Grain Bread,4
+Overweight,Vegetarian,Lunch,Quinoa Bowl with Roasted Vegetables,4
+Overweight,Vegetarian,Afternoon Snack,Mixed Nuts and Seeds,4
+Overweight,Vegetarian,Afternoon Snack,Fruit Salad,3
+Overweight,Vegetarian,Dinner,Vegetable Stir-Fry with Tofu and Brown Rice,4
+Overweight,Vegetarian,Dinner,Stuffed Peppers with Quinoa and Black Beans,4
+Overweight,Vegetarian,Dinner,Spinach and Ricotta Stuffed Mushrooms,4
+Overweight,Vegetarian,Evening Snack,Baked Kale Chips,3
+Overweight,Vegetarian,Evening Snack,Dark Chocolate and Almonds,4
+Overweight,Non-Vegetarian,Breakfast,Egg White Omelet with Spinach and Feta,4
+Overweight,Non-Vegetarian,Breakfast,Greek Yogurt with Berries and Honey,3
+Overweight,Non-Vegetarian,Breakfast,Smoked Salmon on Whole Grain Toast,5
+Overweight,Non-Vegetarian,Mid-Morning Snack,Celery Sticks with Peanut Butter,3
+Overweight,Non-Vegetarian,Mid-Morning Snack,A Handful of Almonds,4
+Overweight,Non-Vegetarian,Lunch,Chicken and Avocado Salad with Mixed Greens,5
+Overweight,Non-Vegetarian,Lunch,Turkey Wrap with Whole Wheat Tortilla,4
+Overweight,Non-Vegetarian,Lunch,Grilled Salmon with Steamed Vegetables,5
+Overweight,Non-Vegetarian,Afternoon Snack,Cottage Cheese with Pineapple,4
+Overweight,Non-Vegetarian,Afternoon Snack,Hard-Boiled Egg,3
+Overweight,Non-Vegetarian,Dinner,Grilled Chicken with Quinoa and Broccoli,5
+Overweight,Non-Vegetarian,Dinner,Baked Cod with Sweet Potato and Green Beans,5
+Overweight,Non-Vegetarian,Dinner,Beef Stir-Fry with Mixed Vegetables,5
+Overweight,Non-Vegetarian,Evening Snack,Low-Fat Cheese with Whole Grain Crackers,4
+Overweight,Non-Vegetarian,Evening Snack,Greek Yogurt with Honey,4
+Obese,Vegetarian,Breakfast,Chia Pudding with Almond Milk and Berries,5
+Obese,Vegetarian,Breakfast,"Green Smoothie with Spinach, Cucumber, and Apple",5
+Obese,Vegetarian,Breakfast,Oatmeal with Blueberries and Almonds,4
+Obese,Vegetarian,Mid-Morning Snack,Sliced Bell Peppers with Hummus,4
+Obese,Vegetarian,Mid-Morning Snack,A Handful of Walnuts,4
+Obese,Vegetarian,Lunch,Mixed Vegetable Salad with Quinoa and Chickpeas,4
+Obese,Vegetarian,Lunch,Lentil Soup with Spinach,4
+Obese,Vegetarian,Lunch,Grilled Portobello Mushroom Burger,4
+Obese,Vegetarian,Afternoon Snack,Sliced Cucumbers with Tzatziki,4
+Obese,Vegetarian,Afternoon Snack,Fruit Salad with Mixed Berries,3
+Obese,Vegetarian,Dinner,Cauliflower Rice Stir-Fry with Tofu,4
+Obese,Vegetarian,Dinner,Stuffed Bell Peppers with Brown Rice and Black Beans,3
+Obese,Vegetarian,Dinner,Baked Eggplant Parmesan,4
+Obese,Vegetarian,Evening Snack,Air-Popped Popcorn,3
+Obese,Vegetarian,Evening Snack,Sliced Apple with Almond Butter,4
+Obese,Non-Vegetarian,Breakfast,Scrambled Egg Whites with Spinach and Tomato,4
+Obese,Non-Vegetarian,Breakfast,Greek Yogurt with Flaxseeds and Blueberries,4
+Obese,Non-Vegetarian,Breakfast,Smoked Salmon with Avocado on Whole Grain Toast,3
+Obese,Non-Vegetarian,Mid-Morning Snack,A Handful of Almonds,4
+Obese,Non-Vegetarian,Mid-Morning Snack,Celery Sticks with Low-Fat Cream Cheese,3
+Obese,Non-Vegetarian,Lunch,Grilled Chicken Salad with Mixed Greens,5
+Obese,Non-Vegetarian,Lunch,Turkey and Avocado Wrap,3
+Obese,Non-Vegetarian,Lunch,Baked Salmon with Steamed Broccoli,3
+Obese,Non-Vegetarian,Afternoon Snack,Cottage Cheese with Sliced Peaches,4
+Obese,Non-Vegetarian,Afternoon Snack,A Handful of Mixed Nuts,4
+Obese,Non-Vegetarian,Dinner,Grilled Chicken Breast with Quinoa and Asparagus,5
+Obese,Non-Vegetarian,Dinner,Baked Cod with Sweet Potato,5
+Obese,Non-Vegetarian,Dinner,Turkey Meatballs with Zucchini Noodles,5
+Obese,Non-Vegetarian,Evening Snack,Low-Fat Greek Yogurt with Honey,4
+Obese,Non-Vegetarian,Evening Snack,Sliced Pear with Cottage Cheese,4
